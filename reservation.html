@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="reservation.css">
+        <title>Reservations | Club Tropicana</title>
+        <style>
+        #overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="overlay">
+            <div class="topnav" id="myTopNav">
+                <a href="index.html">Home</a>
+                <a href="todo.html">Activities</a>
+                <a href="reservation.html" class="active">Reservations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <br><br>
+            <div id="glass">
+                <h1 class="title">Book a Room</h1>
+                <br>
+                <div id="background">
+                    <form>
+                        <label for="name"><p>First and Last name:</p></label>
+                        <input type="text" id="name" name="First and Last name">
+                        <label for="datea"><p>Date of arrival:</p></label>
+                        <input type="date" id="datea" name="Date they are coming">
+                        <label for="datel"><p>Date of departure:</p></label>
+                        <input type="date" id="datel" name="Date they are leaving">
+                        <label for="people"><p>How many people in your party:</p></label>
+                        <input type="text" id="people" name="How many people are coming">
+                        <label for="room"><p>What type of room:</p></label>
+                        <select name="room" id="room">
+                            <option value="single">Single</option>
+                            <option value="double">Double</option>
+                            <option value="triple">Triple</option>
+                            <option value="quad">Quad</option>
+                        </select>
+                        <label for="number"><p>How many rooms:</p></label>
+                        <input type="text" id="number" name="How many rooms">
+                    </form>
+                    <br><br><br>
+                    <hr>
+                    <br><br><br><br>
+                    <input type="submit">
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopNav");
+                if (x.className == "topnav") {
+                    x.className += "responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>

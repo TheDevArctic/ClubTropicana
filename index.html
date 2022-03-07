@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home | Club Tropicana</title>
+        <style>
+            #overlay {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+            }
+        </style>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="overlay">
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <a href="todo.html">Activities</a>
+                <a href="reservation.html">Reservations</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div id="glass">
+                <div class="gtext">
+                    <h1>Club Tropicana</h1>
+                    <p>"Where drinks are free"</p>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopNav");
+                if (x.className == "topnav") {
+                    x.className += "responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
