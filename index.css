@@ -1,32 +1,99 @@
 body {
-    background-image: url("photos/bg.jpg");
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
     background-size: cover;
 }
 
-h1 {
-    font-size: 70px; 
+.titlebar h1 {
+    position: absolute;
+    right: 40%;
+    top: 2%;
+    font-size: 60px;
 }
 
-p {
-    font-size: 40px;
+.quote h2 {
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
-#glass {
-    width: 900px;
-    height: 400px;
-    background-size: cover;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    margin: auto;
-    margin-top: 10%;
+.titlebar {
+    width: 100%;
+    height: 90px;
+    background-color: white;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border: black solid 3px;
+    margin: auto;
+    border-top: solid black 3px;
+    border-bottom: solid black 3px;
 }
 
-.gtext {
-    margin-top: 17%;
+.quote {
+    width: 400px;
+    height: 90px;
+    float: right;
+    text-align: center;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    background-size: cover;
+    border-left: solid black 3px;
+}
+
+.socials {
+    width: 400px;
+    height: 90px;
+    float: left;
+    background-color: #63a4ff;
+    background-image: linear-gradient(315deg, #63a4ff 0%, #83eaf1 74%);
+    background-size: cover;
+    border-right: solid black 3px;
+}
+
+#fb {
+    position: absolute;
+    top: 43px;
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+#insta {
+    position: absolute;
+    top: 48px;
+    left: 190px;
+    padding-top: 3px;
+    width: 200px;
+    height: 70px;
+    float: right;
+}
+
+#center {
+    width: 100%;
+    background-color: red;
+    border-bottom: solid black 4px;
+}
+
+#cphoto1 {
+    width: 50%;
+    height: 700px;
+    background-color: white;
+    background-image: url("photos/everyone.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-right: solid black 3px;
+}
+
+#cphoto2 {
+    position: absolute;
+    top: 144px;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-left: solid black 3px;
+}
+
+#leftfooter {
+    padding-top: 8px;
+    padding-left: 20px;
+    float: left;
 }
 
 .topnav {
